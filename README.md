@@ -1,5 +1,7 @@
 # Neural quantum solver for excited states of trapped ion quantum computing
 
+This repository contains the code and data for the paper [Solving excited states for long-range interacting trapped ions with neural networks](https://arxiv.org/abs/2506.08594).
+
 ## Organization
 
 - `code/Jmat/code/Ising2d_power_law.py`: Python code to generate the interactive Hamiltonian (the J_ij matrix) for the trapped ion model
@@ -37,5 +39,13 @@ Data under `data/energy` are text files listing the energy spectrum at each step
 
 ## Citing our paper
 ```
-ADD BIBTEX once the paper is submitted.
+@misc{ma2025solvingexcitedstateslongrange,
+      title={Solving excited states for long-range interacting trapped ions with neural networks}, 
+      author={Yixuan Ma and Chang Liu and Weikang Li and Shun-Yao Zhang and L. -M. Duan and Yukai Wu and Dong-Ling Deng},
+      year={2025},
+      eprint={2506.08594},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph},
+      url={https://arxiv.org/abs/2506.08594}, 
+}
 ```
