@@ -1,0 +1,8 @@
+#*.xlsx
+code/Jmat*.h
+*.lprof
+__pycache__
+a.out
+*-debug
+*-opt
+.gdb_history

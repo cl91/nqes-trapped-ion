@@ -1,0 +1,2 @@
+CompileFlags:
+  Add: [-I/usr/include/eigen3, -I/usr/include/boost, -I/opt/cuda/include, -xc++, -Wall, -std=c++23, -DGITHASH="0", -DDBG=1, -DNOGPU=1, -DNUM_SPINS=4, -DNUM_HIDDEN_UNITS=20, -DNUM_EIGENSTATES=2, -DJMAT_INC=\"Jmat4.h\"]

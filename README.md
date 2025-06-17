@@ -1,0 +1,41 @@
+# Code and data for paper "Solving excited states for long-range interacting trapped ions with neural networks"
+
+## Organization
+
+- `code/Jmat/code/Ising2d_power_law.py`: Python code to generate the interactive Hamiltonian (the J_ij matrix) for the trapped ion model
+- `code/rbm.cc`: Optimized C++ code for the neural quantum solver with and without the matrix-free method. This is the code that generated the data in the paper
+- `data/energy`: Energy spectrum generated at each step of the training process
+- `data/corrfcn`: Data for the correlation functions
+- `data/rbm-weights`: Weights of the RBM neural networks at the end of the training process
+
+## Building the code
+
+To build the code, change directory to `code` and simply run
+```
+./build.sh [opt]
+```
+Without `opt`, the default is to generate debug builds which are unoptimized and contain all the debugging information. With `opt`, the compiler will be instructed to generate optimized code without debugging symbols in the executable.
+
+To build additional executables for different combinations of N, M, and K, change the line in the build script
+```
+PARAMS=("8 16 2" ...)
+```
+to the parameters you want. The format is "N M K", in this order. For instance, to build the executable for an RBM solver with N=10, M=20, K=3, do
+```
+PARAMS=("10 20 3")
+```
+
+If the specified N is not in the list of pre-built J matrices, you must generate the corresponding J matrix using the code supplied under `code/Jmat/code`. Simply specify N as the parameter to the script, for instance,
+```
+python Ising2d_power_law.py 10
+```
+if you want to generate the J matrix for the trapped ion model with N=10 ions.
+
+### Data format
+
+Data under `data/energy` are text files listing the energy spectrum at each step of the training processes. Data under `data/corrfcn` and `data/rbm-weights` are matrices stored in the MATLAB .mat file (version 5), which can be processed using standard tools such as python's scipy package.
+
+## Citing our paper
+```
+ADD BIBTEX once the paper is submitted.
+```
