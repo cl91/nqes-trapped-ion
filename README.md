@@ -1,4 +1,4 @@
-# Code and data for paper "Solving excited states for long-range interacting trapped ions with neural networks"
+# Neural quantum solver for the excited states of trapped ion quantum computing
 
 ## Organization
 
