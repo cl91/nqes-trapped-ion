@@ -1,4 +1,4 @@
-# Neural quantum solver for the excited states of trapped ion quantum computing
+# Neural quantum solver for excited states of trapped ion quantum computing
 
 ## Organization
 
