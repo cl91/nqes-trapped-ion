@@ -48,13 +48,15 @@ Data under `data/energy` are text files listing the energy spectrum at each step
 
 ## Citing our paper
 ```
-@misc{ma2025solvingexcitedstateslongrange,
-      title={Solving excited states for long-range interacting trapped ions with neural networks},
-      author={Yixuan Ma and Chang Liu and Weikang Li and Shun-Yao Zhang and L. -M. Duan and Yukai Wu and Dong-Ling Deng},
-      year={2025},
-      eprint={2506.08594},
-      archivePrefix={arXiv},
-      primaryClass={quant-ph},
-      url={https://arxiv.org/abs/2506.08594},
+@misc{Ma2025Solving,
+  title = {Solving Excited States for Long-Range Interacting Trapped Ions with Neural Networks},
+  author = {Yixuan Ma and Chang Liu and Weikang Li and Shun-Yao Zhang and L. -M. Duan and Yukai Wu and Dong-Ling Deng},
+  year = {2025},
+  number = {arXiv:2506.08594},
+  eprint = {2506.08594},
+  primaryclass = {quant-ph},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2506.08594},
+  archiveprefix = {arXiv}
 }
 ```
