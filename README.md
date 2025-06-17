@@ -20,11 +20,11 @@ Without `opt`, the default is to generate debug builds which are unoptimized and
 
 To run the code, use the script `run.sh`. For instance,
 ```
-./run.sh ./rbm-matfree-N50-M150-K2-opt -c 128 --model trappedion -h 0.595 -n 200 -m 200 --tol 1e-6 --reglam-init 40 --reglam-cutoff 1 --minres-rtol 1e-9 --correlation-data ioncorrN50M150K2h0.595.mat --dump-rbm ionh0.595
+./run.sh ./rbm-matfree-N32-M64-K2-opt -c 128 --model trappedion -h 0.595 -n 200 -m 200 --tol 1e-6 --reglam-init 40 --reglam-cutoff 1 --minres-rtol 1e-9 --correlation-data ioncorrN32M64K2h0.595.mat --dump-rbm ionh0.595
 ```
-will perform a simulation of 50 trapped ions using RBM states with 150 hidden units, and solve for the two lowest energy states in the spectrum, using the optimized matrix-free method. RBM weights are correlation function data will be stored to the specified MATLAB .mat files. For a complete list of supported command line parameters, do
+will perform a simulation of 32 trapped ions using RBM states with 64 hidden units, and solve for the two lowest energy states in the spectrum, using the optimized matrix-free method. RBM weights are correlation function data will be stored to the specified MATLAB .mat files. For a complete list of supported command line parameters, do
 ```
-./rbm-matfree-N50-M150-K2-opt -?
+./rbm-matfree-N32-M64-K2-opt -?
 ```
 
 To build additional executables for different combinations of N, M, and K, change the line in the build script
